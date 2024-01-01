@@ -12,13 +12,14 @@
 <body>
     <div class="container">
         <div class="time">
-            <span>00:00</span>
+            <span id="watch">00:00:00</span>
         </div>
         <div class="buttons">
-            <button class="start-button">Iniciar</button>
-            <button class="stop-button">Pausar</button>
-            <button class="restart-button">Zerar</button>
+            <button class="start-button" onclick="start()">Iniciar</button>
+            <button class="pause-button" onclick="pause()">Pausar</button>
+            <button class="restart-button" onclick="restart()">Zerar</button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
