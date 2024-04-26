@@ -1,8 +1,10 @@
 * {
-    background-color: black;
+    background-color: blue;
     color: #fff;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .container {
@@ -12,6 +14,51 @@
     align-items: center;
     height: 100vh;
 }
+
+.digital {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    margin-bottom: 40px;    
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    gap: 30px;
+    margin-top: 30px;
+
+    > .pomodoro, .cronometro, .relogio {
+        display: flex;
+        flex-direction: row;
+
+        > a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > img {
+                margin-right: 10px;
+                width: 30px;
+                height: 30px;
+            } 
+        }
+    }
+
+    > .pomodoro:hover, .cronometro:hover, .relogio:hover {
+        > a {
+            >  span {
+                color: black;
+                transition: linear 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
 
 .time {
     font-size: 120px;
@@ -27,7 +74,7 @@
     > button {
         width: 100px;
         height: 50px;
-        background-color: #7e0c7d;
+        background-color: black;
         border: none;
         border-radius: 40px;
     }
